@@ -58,7 +58,13 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-
+a:hover{
+  color:black;
+}
+#getStarted:hover{
+  border:1px solid black;
+  color: grey;
+}
 .topnav{
     display: flex;
     justify-content: space-between;
@@ -79,15 +85,16 @@ h1, h2, h3, h4, h5 {
 #maintitle{
    font-size:100px;
    text-align: center;
+   display: flex;
+   flex-direction: column;
 } 
 #getStarted{ 
-	 border:1px solid black;
 	 height:35px;
 	 font-size:20px;
    width:150px;
    margin-left: 25%;
    text-align: center;
-	
+   line-height: 35px;
  }
  hr{
    display: block;
@@ -148,4 +155,59 @@ margin:1% 0 0 0;
 }
 .CR{
   margin:10%;
+}
+@media(max-width: 800px){
+#codeimg{
+  display: none;
+}
+
+.topnav{
+flex-wrap: wrap-reverse;
+
+}
+#getStarted{
+  margin-left: 40%;
+}
+a{
+  margin-right: 7%;
+}
+.greatidealogo{
+  margin-left: 37%;
+  margin-bottom: 3%;
+}
+}
+@media(max-width: 600px){
+  .topnav{
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+  }
+  a{
+    margin-bottom: 3%;
+    width: 100%;
+    border-top: solid black 1px;
+    text-align: center;
+    align-content: center;
+    height:5%;
+
+  }
+  #getStarted{
+    margin-left: 35%;
+  }
+  .greatidealogo{
+    pos
+  }
+  .contentcontainer1{
+    flex-direction: column;
+  }
+  .contentcontainer2{
+    flex-direction: column;
+  }
+  .topcontent{
+    width: 100%;
+  }
+  .midcontent{
+    width: 100%;
+  }
 }
